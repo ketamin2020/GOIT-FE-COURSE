@@ -1,0 +1,161 @@
+
+  
+    
+  @media (max-width: 767px){
+  
+    .container{
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .section{
+      width: 320px;
+      margin: 0 auto;
+    }
+
+    .header{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .about__title{
+      width: 222px;
+    }
+
+    .link__item{
+       display: flex;
+       align-items: baseline;
+       margin-bottom: 112px;
+    }
+
+    .container__inner{
+      text-align: center;
+  }
+
+  .partner__list{
+    margin: 0 auto;
+    margin-bottom: 26px;
+  }
+
+  .find__partner , .see__partner{
+    width: 280px;
+  }
+
+    
+  }
+
+  @media (min-width: 768px){
+    .bg__wrapper {
+      background-color: rgba(0,0,0,0.2);
+      background-blend-mode: darken;
+      background-image: url(../img/bg__image/bg_big.png);
+      height: 700px;
+      width: 100%;
+    }
+    .container{
+      max-width: 740px;
+      margin: 0 auto;
+    }
+
+    .header{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 144px;
+    }
+
+    .main__title{
+      font-size: 52px;
+    }
+
+    .link__item{
+      display: flex;
+      justify-content: baseline;
+    }
+
+    .partner__item{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 32px;
+    }
+
+    section{
+      width: 532px;
+      margin: 0 auto;
+    }
+
+    .find__partner {
+      width: 225px;
+    }
+    
+    .see__partner{
+      width: 192px;
+    }
+
+    button{
+      animation-duration: 3s;
+      animation-name: box;
+    }
+    
+    @keyframes box {
+      from {
+        opacity: 0;
+        width: 0px;
+        font-size: 0px;
+      }
+    
+      to {
+        opacity: 1;
+        width: 225px;
+        font-size: 14px;
+      }
+    }
+
+    .section__title{
+      animation-duration: 3s;
+      animation-name: slidein;
+    }
+    
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%; 
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+
+  }
+
+  @media (min-width: 768px) and (max-width: 959px){
+    .partner__list{
+      margin-bottom: 50px;
+    }
+    .partner__list:nth-last-child(-n+2){
+      margin-bottom: 0px;
+    }
+  }
+  @media (min-width: 960px) {
+    
+    .container{
+      
+      max-width: 1440px;
+      padding: 0;
+    }
+
+    .section{
+      width: 942px;
+      
+    }
+    .main__title{
+      padding: 0 180px;
+    }
+  }
+

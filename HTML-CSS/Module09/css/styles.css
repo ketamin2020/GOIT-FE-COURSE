@@ -1,0 +1,261 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+ margin: 0px;
+ padding: 0px;
+}
+
+ul,li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a{
+ text-decoration: none;   
+}
+
+.visually-hidden{
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    text-indent: -9999px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* =============================== */
+/* =============================== */
+/* =============================== */
+/* =============================== */
+
+.bg__wrapper{
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  background-blend-mode: darken;
+  background-image: url(../img/bg__image/bg_big.png);
+  height: 540px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+    
+
+  .main__logo,.link,.main__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+  }
+
+  .main__logo{
+      font-size: 20px;
+  }
+
+  .main__logo__link{
+    text-align: center;
+  }
+
+  .link{
+     display: block;
+     font-size: 14px;
+     cursor: pointer;
+     padding: 3px 14px ;
+      border: 2px solid transparent;
+      line-height: 32px;
+      text-align: center;
+      border-radius: 56px;
+      
+  }
+
+  .main__title{
+    width: 320px;
+    font-size: 26px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    margin: 0 auto;
+  }
+  .about__title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    
+    
+  }
+  .find__partner{
+      display: block;
+      margin: 0 auto;
+      padding: 0px;
+      border: 1px transparent;
+      border-radius: 20px 20px 20px 20px;
+      height: 40px;
+      background-color: #ff4e50;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      color: #ffffff;
+      cursor: pointer;
+  }
+
+
+  .link:hover{
+    border: 2px solid #ffffff;
+    transition: 2ms linear;
+  }
+
+  
+
+  .section__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #333333;
+    text-align: center;
+    
+    margin: 0 auto 26px auto;
+  }
+  
+.partner__photo{
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.partner__name{
+  margin-bottom: 20px;
+}
+
+.icon-tv::after{
+    content: url(../img/icons/tv.png);
+    position: absolute;
+    top: 81px;
+    left: 133px;
+}
+
+.icon-cup::after{
+    content: url(../img/icons/cup.png);
+    position: absolute;
+    top: 81px;
+    left: 133px;
+}
+.icon-bottle::after{
+    content: url(../img/icons/bottle.png);
+    position: absolute;
+    top: 81px;
+    left: 133px;
+}
+
+.icon-telegram::after{
+    content: url(../img/icons/telegram.png);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 81px;
+    left: 133px;
+}
+
+  .partner__list{
+      display:block;
+      position: relative;
+      width: 232px;
+      text-align: center;
+      margin: 0 auto;
+      
+  }
+
+  .partner__list:hover img{
+    transform: scale(1.2);
+    transition: 200ms linear;
+  }
+
+  .partner__list:hover p{
+    transform: scale(1.1);
+    transition: 200ms linear;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0,0.5);
+  }
+
+  .partner__name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    color: #333333;
+
+  }
+  .history__about__them{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+  }
+
+  .see__partner{
+    display: block;
+    margin: 0 auto;
+    padding: 0px;
+    border: 2px solid #ff4e50;
+    border-radius: 20px 20px 20px 20px;
+    height: 40px;
+    background-color: #ffffff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ff4e50;
+    cursor: pointer;
+  }
+
+  button:hover{
+    transform: scale(1.1);
+    transition: 200ms linear;
+    box-shadow: 4px 4px 5px 5px rgba(0, 0, 0,0.5);
+  }
+
+  .main__logo__link:hover .main__logo{
+    color: red;
+    transition: 200ms linear;
+  }
+
+  
+
+  
+  
+  
+  
+  

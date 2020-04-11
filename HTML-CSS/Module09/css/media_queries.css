@@ -1,0 +1,128 @@
+
+  
+    
+  @media (max-width: 767px){
+    .bg__wrapper{
+      height: 540px;
+      padding-top: 20px;
+    }
+    .section{
+      padding-top: 228px;
+      padding-bottom: 130px;
+    }
+
+    .section__partner-list{
+      padding: 50px 0;
+    }
+
+    header .order-1{
+      margin-bottom: 116px;
+    }
+
+    .section__title{
+      width: 320px;
+    }
+
+    .partner__item .col-12{
+      margin-bottom: 28px;
+    }
+      
+    .about__title{
+      width: 222px;
+    }
+
+  .find__partner , .see__partner{
+    width: 280px;
+  }
+
+}
+ 
+  
+
+    @media (min-width: 768px){ 
+      
+    .bg__wrapper {
+      height: 700px;
+      padding-top: 40px;
+      width: 100%;
+    }
+
+    .section{
+      padding-top: 220px;
+      padding-bottom: 248px;
+    }
+
+    .section__partner-list{
+      padding: 50px 0;
+    }
+    
+    .main__title{
+      font-size: 52px;
+      width: 530px;
+    }
+
+    .about__title{
+      font-size: 24px;
+    }
+
+    .find__partner {
+      width: 225px;
+    }
+    
+    .see__partner{
+      width: 192px;
+      margin-top: 50px;
+    }
+
+    
+
+    button{
+      animation-duration: 3s;
+      animation-name: box;
+    }
+  }
+    
+     @keyframes box {
+      from {
+        opacity: 0;
+        width: 0px;
+        font-size: 0px;
+      }
+    
+      to {
+        opacity: 1;
+        width: 225px;
+        font-size: 14px;
+      }
+    }
+
+    .section__title{
+      animation-duration: 3s;
+      animation-name: slidein;
+    }
+    
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%; 
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+
+  
+
+  @media (min-width: 768px) and (max-width: 959px){
+    .partner__item .col-12 {
+      margin-bottom: 50px;
+    }
+
+    .partner__item .col-12:nth-last-child(-n+2){
+      margin-bottom: 0px;
+    }
+  } 
+ 
+  

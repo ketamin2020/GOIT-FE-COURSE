@@ -62,17 +62,15 @@ a{
 
 
     /* ======header===== */
-    
 
     .container{  
         background-image: -webkit-linear-gradient(90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%),
                             url(../img/bg__image/bg-image.jpg);
-        background-repeat: no-repeat;
         background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
-        width: 1920px;
+        background-attachment: fixed;
         height: 1000px;
-        margin: 0 auto;
     }
 
     @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx), (min-resolution: 192dpi) {
@@ -84,7 +82,6 @@ a{
     }  
 
       
-    /* -webkit-linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), */
     
     .container__inner{
         width: 1200px;
@@ -106,7 +103,7 @@ a{
 
     header,
     nav,
-    .main__nav{
+    .main__nav-item{
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -115,22 +112,17 @@ a{
                 justify-content: space-between;
     }
 
-    nav{
-        width: 630px;
-    }
-
-    .main__nav{
-        width: 550px;
+    .main__nav-item{
+        width: 500px;
     }
 
     .shopping__panel-item{
         width: 140px;
-        margin-left: 30px;
+        padding: 0 20px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+        justify-content: space-around;
     }
 
     .shopping__panel-img{
@@ -152,9 +144,6 @@ a{
     }
 
     .main__logo-text{
-        font-family: "Montserrat" ,'sans-serif';
-        font-style: normal;
-        font-weight: 700;
         font-size: 30px;
         color: #fff;
         letter-spacing: -7px;
@@ -167,9 +156,7 @@ a{
     }
 
     .main__nav-link{
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 400;
+        font-size: 14px;
         text-transform: uppercase;
         color: #fff;
         margin-bottom: 10px;
@@ -195,6 +182,33 @@ a{
     }
 
 
+    .main__logo{
+        -webkit-animation-duration: 4000ms;
+                animation-duration: 4000ms;
+        -webkit-animation-name: logo;
+                animation-name: logo;
+    }
+    @-webkit-keyframes logo {
+        from {
+        opacity: 0;
+        -webkit-transform: rotate(720deg);
+                transform: rotate(720deg);
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes logo {
+        from {
+        opacity: 0;
+        -webkit-transform: rotate(720deg);
+                transform: rotate(720deg);
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
 
     /* =========section-1======== */
 
@@ -206,18 +220,12 @@ a{
 } 
 
 .main__site-text{
-    font-family: 'Kaushan Script';
-     font-style: normal;
-     font-weight: 400;
      font-size: 72px;
      margin-bottom: 15px;
      color: #fff;
 }
 
 .main__site-name{
-     font-family: 'Montserrat';
-     font-style: normal;
-     font-weight: 800;
      font-size: 150px;
      margin-bottom: 120px;
      padding: 0 50px;
@@ -225,29 +233,32 @@ a{
      text-transform: uppercase;
 }
 
+.btn{
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+}
+
 .main__site-btn{
     width: 160px;
     height: 40px;
     border: #fff 3px solid;
-    color: #fff;
-    padding: 0px;
-    margin: 0px;
+    
     background-color: transparent;
-    cursor: pointer;
+    
 }
 
 
 /* =========section-2======== */
 
-  main,footer{
-      width: 1920px;
+  main,footer, .container{
       margin: 0 auto;
   }
 
   .section__title{
-    font-family: 'Kaushan Script';
-    font-style: normal;
-    font-weight: 400;
     font-size: 24px;
     margin-bottom: 66px;
     color:#333;
@@ -265,9 +276,6 @@ a{
 
   .section__subtitle{
     display: block;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
     font-size: 30px;
     color: #333;
     text-transform: uppercase;
@@ -279,50 +287,44 @@ a{
       padding: 0 30px;
   }
 
-  .services__list-clock::before{
+  .services__item-icon_clock::before{
       content: url(../img/icons/amazing-services-icon/ALARM.svg);
   }
 
-  .services__list-graph::before{
+  .services__item-icon_graph::before{
       content: url(../img/icons/amazing-services-icon/LINE\ GRAPH.svg);
   }
 
-  .services__list-computer::before{
+  .services__item-icon_computer::before{
       content: url(../img/icons/amazing-services-icon/COMPUTER\ _\ OK.svg);
   }
 
-  .services__list-book::before{
+  .services__item-icon_book::before{
       content: url(../img/icons/amazing-services-icon/BOOK\ 2.svg);
   }
 
-  .services__list-home::before{
+  .services__item-icon_home::before{
       content: url(../img/icons/amazing-services-icon/HOME.svg);
   }
 
-  .services__list-image::before{
+  .services__item-icon_image::before{
       content: url(../img/icons/amazing-services-icon/IMAGE.svg);
   }
 
-  .services__list-skill{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
+  .services__item-skill{
     font-size: 14px;
     color: #333;
     text-transform: uppercase;
     padding-left: 30px;
   }
 
-  .services__list-description{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+  .services__item-description{
     font-size: 15px;
     padding-left: 64px;
     color: #999;
   }
 
-  .services__list{
+  .services__item{
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -332,14 +334,14 @@ a{
       margin-bottom: 100px;
   } 
 
-  .services__list:nth-last-child(-n+3){
+  .services__item:nth-last-child(-n+3){
       margin-bottom: 0px;
   }
 
 
   /* ======section-3======= */
 
-  .team__item, .main__footer, .services__item{
+  .team__item, .main__footer, .services__list{
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -351,9 +353,6 @@ a{
   }
 
   .section__description{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 15px;
     text-align: center;
     color: #999;
@@ -449,9 +448,6 @@ a{
   
 
   .team__list_person-name{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     color: #666666;
     text-transform: uppercase;
@@ -462,26 +458,6 @@ a{
      color: #a6a6a6;
      text-align: center;
   }
-
-  .footer__input::-webkit-input-placeholder,
-  .footer__input::-moz-placeholder,
-  .footer__input:-ms-input-placeholder,
-  .footer__input::-ms-input-placeholder{
-    font-family: 'Roboto';
-    font-style: italic;
-    font-weight: 300;
-    font-size: 15px;
-  }
-
-  .team__list_person-ocupation,
-  .footer__input::placeholder{
-    font-family: 'Roboto';
-    font-style: italic;
-    font-weight: 300;
-    font-size: 15px;
-  }
-
-
 
   /* =========footer======= */
 
@@ -494,9 +470,6 @@ a{
   }
 
   .footer__text{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     color: #333;
   }
@@ -516,19 +489,12 @@ a{
   }
 
   .footer__btn{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
      height: 38px; 
      width: 150px;
-     padding: 0px;
-     margin: 0px;
      border: none;
      background-color: #95e1d3;
-     color: #fff;
-     text-transform: uppercase;
      outline: none;
-     cursor: pointer;
+     
   }
 
 

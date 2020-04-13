@@ -73,3 +73,51 @@
           url('../fonts/kaushan-script-v8-latin/kaushan-script-v8-latin-regular.woff') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
           url('../fonts/kaushan-script-v8-latin/kaushan-script-v8-latin-regular.woff2') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
    }
+
+   .main__logo-text, .btn{
+     font-family: "Montserrat" ,'sans-serif';
+     font-style: normal;
+     font-weight: 700;
+   }
+
+   .main__nav-link, .team__list_person-name, .footer__text, .services__item-skill{
+     font-family: "Montserrat";
+     font-style: normal;
+     font-weight: 400;
+   }
+
+   .main__site-text, .section__title{
+     font-family: 'Kaushan Script';
+     font-style: normal;
+     font-weight: 400;
+   }
+
+   .main__site-name, .section__subtitle{
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 800;
+   }
+
+   .services__item-description, .section__description{
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+   }
+
+   .footer__input::-webkit-input-placeholder,
+  .footer__input::-moz-placeholder,
+  .footer__input:-ms-input-placeholder,
+  .footer__input::-ms-input-placeholder{
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  .team__list_person-ocupation,
+  .footer__input::placeholder{
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+  }

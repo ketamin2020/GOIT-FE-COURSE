@@ -24,7 +24,7 @@
                      </h1>
 
                     <nav class="nav">
-                       <ul class="main__nav">
+                       <ul class="main__nav-item">
                         <li class="main__nav-list">
                             <a href="#" class="main__nav-link link">About</a>
                         </li>
@@ -41,7 +41,17 @@
                             <a href="#" class="main__nav-link link">Contact</a>
                         </li>
                        </ul>
+
                        <ul class="shopping__panel-item">
+                        <li class="shoping__panel-list">
+                            <a href="" class="shopping__panel-link link">
+                                <svg class="shopping__panel-img">
+                                    
+                                        <use href="./img/icons/header-icons/symbol-defs.svg#icon-SHOPPING-CART"></use>
+                                
+                                </svg>      
+                            </a>
+                        </li>  
                         <li class="shoping__panel-list">
                             <a href="" class="shopping__panel-link link">
                                 <svg class="shopping__panel-img">
@@ -51,15 +61,7 @@
                                 </svg>   
                             </a>
                         </li>
-                        <li class="shoping__panel-list">
-                            <a href="" class="shopping__panel-link link">
-                                <svg class="shopping__panel-img">
-                                    
-                                        <use href="./img/icons/header-icons/symbol-defs.svg#icon-SHOPPING-CART"></use>
-                                
-                                </svg>      
-                            </a>
-                        </li>
+                        
                        </ul>
                     </nav>
                 </header>
@@ -72,7 +74,7 @@
                         <h2 class="main__site-name">
                             Welcome to Mogo
                         </h2>
-                        <button class="main__site-btn">
+                        <button class="main__site-btn btn">
                             Learn More
                         </button>
                     </div>
@@ -95,56 +97,56 @@
                  </span>
                 </h3>
     
-                <ul class="services__item">
-                    <li class="services__list services__list-icon services__list-clock   ">
-                        <span class="services__list-skill">
+                <ul class="services__list">
+                    <li class="services__item services__item-icon services__item-icon_clock   ">
+                        <h3 class="services__item-skill">
                             Photography
-                        </span>
-                        <p class="services__list-description">
+                        </h3>
+                        <p class="services__item-description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                         </p>
                         
                     </li>
-                    <li class="services__list services__list-icon services__list-graph">
-                        <span class="services__list-skill">
+                    <li class="services__item services__item-icon services__item-icon_graph">
+                        <h3 class="services__item-skill">
                             Web design
-                        </span>
-                        <p class="services__list-description">
+                        </h3>
+                        <p class="services__item-description">
                             Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                         </p>
                     </li>
-                    <li class="services__list services__list-icon services__list-computer">
-                        <span class="services__list-skill">
+                    <li class="services__item services__item-icon services__item-icon_computer">
+                        <h3 class="services__item-skill">
                             Creativity
-                        </span>
-                         <p class="services__list-description">
+                        </h3>
+                         <p class="services__item-description">
                             Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                          </p>
                         
                     </li>
-                    <li class="services__list services__list-icon services__list-book">
-                        <span class="services__list-skill">
+                    <li class="services__item services__item-icon services__item-icon_book">
+                        <h3 class="services__item-skill">
                             Seo
-                        </span>    
-                        <p class="services__list-description">
+                        </h3>    
+                        <p class="services__item-description">
                             Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
                         </p>
                         
                     </li>
-                    <li class="services__list services__list-icon services__list-home">
-                        <span class="services__list-skill">
+                    <li class="services__item services__item-icon services__item-icon_home">
+                        <h3 class="services__item-skill">
                             CSS/HTML
-                        </span>    
-                        <p class="services__list-description">
+                        </h3>    
+                        <p class="services__item-description">
                             Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
                         </p>
                         
                     </li>
-                    <li class="services__list services__list-icon services__list-image">
-                        <span class="services__list-skill">
+                    <li class="services__item services__item-icon services__item-icon_image">
+                        <h3 class="services__item-skill">
                             Digital
-                        </span>
-                        <p class="services__list-description">
+                        </h3>
+                        <p class="services__item-description">
                             Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                         </p>
                         
@@ -356,9 +358,10 @@
             </p>
             <form action="#" method="get">
                 <input class="footer__input" type="email" name="email" id="" placeholder="Your e-mail...">
-                <button class="footer__btn" >Subscribe</button>
+                <button class="footer__btn btn" >Subscribe</button>
             </form>
         </div>
     </footer>
+ 
 </body>
 </html>

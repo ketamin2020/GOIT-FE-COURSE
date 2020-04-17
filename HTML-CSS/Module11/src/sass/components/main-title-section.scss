@@ -1,0 +1,31 @@
+
+.main__site-title{
+    text-align: center;
+} 
+
+.main__site-text{
+    @extend %Kaushan-400;
+     font-size: 72px;
+     margin-bottom: 15px;
+     color: $primary-white-color;
+}
+
+.main__site-name{
+    @extend %Montserat-800;
+     font-size: 150px;
+     margin-bottom: 120px;
+     padding: 0 50px;
+     color: $primary-white-color;
+     @extend %text-uppercase;
+}
+
+
+.main__site-btn{
+    @extend %button;
+    @extend %Montserat-700;
+    width: 160px;
+    height: 40px;
+    border: $primary-white-color 3px solid;
+    background-color: transparent;
+    
+}

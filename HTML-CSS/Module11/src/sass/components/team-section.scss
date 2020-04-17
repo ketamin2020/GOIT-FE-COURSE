@@ -1,0 +1,95 @@
+.team__item, .main__footer, .services__list{
+     @extend %flex-between; 
+     flex-wrap: wrap;
+     
+}
+
+.section__description{
+  font-size: 15px;
+  text-align: center;
+  color: $secondary-grey-color;
+  padding: 0 10px ;
+}
+
+.team__list-background{
+    position: relative;
+    width: 380px;
+    height: 470px;
+    background-color: $team-background-color;
+
+    &:hover .team__list-photo{
+        transform: translate(-10px,-10px);
+        transition: 200ms linear;
+    }
+
+    &:hover .social__item{
+        background-image: -ms-linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
+        background-image: -moz-linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
+      }
+
+      &:hover .social__link{
+        opacity: 1;
+    }
+}
+
+.team__list_person-name{
+    @extend %Montserat-400;
+    margin: 26px 0 10px 0;
+}
+
+.team__list_photo-person{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.social__item,.social__link{
+   @include center-flex ('all');
+}
+
+.social__item{
+    position: absolute;
+    width: 380px;
+    height: 470px;
+}
+
+.social__link{
+  width: 55px;
+  height: 55px;
+  border-right:  1px solid #f3818199;
+  background-color: $hover-link-color;
+  text-align: center;
+  opacity: 0;
+}
+
+.social__link_image{
+    height: 26px;
+    width: 30px;
+    fill: $pseudo-background-color;
+}
+
+.team__list-photo{
+    transition: 400ms linear;
+}
+
+.social__list:hover .social__link{
+  background-color: $pseudo-background-color;
+
+  &:hover .social__link_image{
+    fill: $primary-white-color;
+    transition: 400ms linear;
+ }
+}
+
+.team__list_person-name{
+  color: $team-name-color;
+  @extend %text-uppercase;
+  text-align: center;
+}
+
+.team__list_person-ocupation{
+    @extend %Roboto-300;
+   color: $team-occupation-color;
+   text-align: center;
+}

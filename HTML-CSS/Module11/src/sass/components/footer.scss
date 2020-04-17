@@ -1,0 +1,35 @@
+.main__footer{
+    height: 56px;
+    border-top: 1px solid $footer-form-border-color;
+    align-items: center;
+}
+
+.footer__text{
+  @extend %Montserat-400;  
+  color: $primary-grey-color;
+
+  &-red{
+    color: red;
+   }
+}
+
+.footer__input{
+    @extend %Roboto-300;
+    width: 228px;
+    height: 39px;
+    padding: 0px 10px;
+    border: 1px solid $footer-form-border-color;
+    border-right: none;
+    outline: none;
+    margin-right: -5px;
+}
+
+.footer__btn{
+    @extend %Montserat-700;
+    color: $primary-white-color;
+   height: 38px; 
+   width: 150px;
+   border: none;
+   background-color: $team-background-color;
+   outline: none;
+}

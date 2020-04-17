@@ -1,0 +1,43 @@
+.main__logo-text{
+    @extend %Montserat-700;
+    font-size: 30px;
+    color: $primary-white-color;
+    letter-spacing: -7px;    
+}
+
+.text_uppercase{
+    @extend %text-uppercase;
+    
+}
+
+.text_lowercase{
+        text-transform: lowercase; 
+}
+
+
+
+
+.main__logo{
+      animation-duration: 4000ms;
+     animation-name: logo;
+}
+@-webkit-keyframes logo {
+    from {
+    opacity: 0;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes logo {
+    from {
+    opacity: 0;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    }
+    to {
+        opacity: 1;
+    }
+}

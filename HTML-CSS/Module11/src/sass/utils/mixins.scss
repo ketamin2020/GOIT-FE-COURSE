@@ -1,0 +1,26 @@
+
+@mixin center-auto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}
+
+
+@mixin pseudo($display:block, $content:''){
+    display: $display;
+    content: $content;
+}
+
+
+@mixin center-flex($type:'all'){
+    display: flex;
+    @if $type== 'all'{
+        justify-content: center;
+        align-items: center;
+    } @else if $type== 'hor'{
+        justify-content: center;
+    } @else if $type== 'ver'{
+        align-items: center;
+    }
+}

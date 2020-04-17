@@ -1,0 +1,26 @@
+
+
+@import 'base/base';
+@import 'base/normalize';
+@import 'base/fonts.scss';
+@import 'base/visually-hidden';
+
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+
+@import './layout/container';
+@import './layout/container-inner';
+@import './layout/section';
+
+@import './components/header';
+@import './components/menu';
+@import './components/shopping-panel';
+@import './components/link';
+@import './components/logo';
+@import './components/main-title-section';
+@import './components/services-section';
+@import './components/team-section';
+@import './components/footer';
+

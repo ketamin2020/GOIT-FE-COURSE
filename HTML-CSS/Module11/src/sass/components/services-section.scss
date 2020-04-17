@@ -1,0 +1,88 @@
+main,footer{
+    @include center-auto; 
+}
+
+.section__title{
+    @extend %Kaushan-400;
+  font-size: 24px;
+  margin-bottom: 66px;
+  color:$primary-grey-color;
+  text-align: center;
+
+   &::after{
+    @include pseudo;
+    @include center-auto; 
+    background-color: $pseudo-background-color;
+    width: 60px;
+    height: 3px;
+  }
+}
+
+.section__subtitle{
+    @extend %Montserat-800;
+  display: block;
+  font-size: 30px;
+  color: $primary-grey-color;
+  @extend %text-uppercase;
+  margin: 14px 0px 40px;
+}
+
+.section__description{
+    @extend %Roboto-400;
+    margin-bottom: 90px;
+    padding: 0 30px;
+}
+
+
+
+.services__item-skill{
+   @extend %Montserat-400;
+  color: $primary-grey-color;
+  @extend %text-uppercase;
+  padding-left: 30px;
+}
+
+.services__item-description{
+    @extend %Roboto-400;
+  font-size: 15px;
+  padding-left: 64px;
+  color: $secondary-grey-color;
+}
+
+.services__item{
+    display: flex;
+    flex-wrap:wrap;
+    width: 388px;
+    margin-bottom: 100px;
+    padding: 0px 20px;
+
+
+    &-icon_clock::before{
+        content: url(../images/ALARM.svg);
+    }
+    
+    &-icon_graph::before{
+        content: url(../images/graph.svg);
+    }
+    
+    &-icon_computer::before{
+        content: url(../images/computer.svg);
+    }
+    
+    &-icon_book::before{
+        content: url(../images/book.svg);
+    }
+    
+    &-icon_home::before{
+        content: url(../images/HOME.svg);
+    }
+    
+    &-icon_image::before{
+        content: url(../images/IMAGE.svg);
+    }
+
+    &:nth-last-child(-n+3){
+        margin-bottom: 0px;
+    }
+} 
+

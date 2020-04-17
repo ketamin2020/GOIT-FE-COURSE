@@ -1,0 +1,19 @@
+.container{  
+    background-image: linear-gradient( 0deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%),
+                        url(../images/bg-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+    @include center-auto;
+
+    @media (min-resolution: 2dppx), (min-resolution: 192dpi){
+            background-image: linear-gradient( 0deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%),
+                             url(../images/bg-image@2x.jpg);
+        
+    }  
+}  
+
+
+

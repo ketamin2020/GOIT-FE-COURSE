@@ -1,0 +1,31 @@
+nav{
+    @extend %flex-between;
+   }
+
+.main__nav-item{
+    @extend %flex-between;
+    width: 500px;
+}
+
+.main__nav-link{
+    @extend %Montserat-400;
+    @extend %text-uppercase;
+    color: $primary-white-color;
+    
+    
+
+    &:hover{
+        color: $hover-link-color;
+        transition: 300ms linear;
+        transform: scale(1.1);
+    }
+
+    &:hover::after{
+        @include pseudo;
+        background-color:$hover-link-color;
+        max-width: 100px;
+        height: 3px;
+        margin-top: 10px;
+    }
+}
+

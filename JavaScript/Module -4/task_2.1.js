@@ -14,8 +14,7 @@ const inventory = {
 
 const invokeInventoryAction = function (itemName, action) {
   console.log(`Invoking action on ${itemName}`);
-  action = action.bind(inventory);
-  action(itemName);
+  action.call(inventory, itemName);
 };
 
 invokeInventoryAction("Medkit", inventory.add);
@@ -29,5 +28,3 @@ invokeInventoryAction("Gas mask", inventory.remove);
 // Removing Gas mask from inventory
 
 console.log(inventory.items); // ['Knife', 'Medkit']
-
-// =================================================================================

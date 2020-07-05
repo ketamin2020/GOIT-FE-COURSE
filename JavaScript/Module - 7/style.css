@@ -1,0 +1,19 @@
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+.style {
+  margin-bottom: 30px;
+  width: 300px;
+}
+.style:hover {
+  transform: scale(1.3);
+}

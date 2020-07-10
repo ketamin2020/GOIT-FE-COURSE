@@ -127,7 +127,7 @@ body {
   cursor: pointer;
   outline: none;
   transition: background-color 200ms ease-in-out;
-  background-image: url("../images/icon-close.svg");
+  background-image: url("..src/images/icon-close.svg");
   background-position: center;
   background-size: 60%;
   background-repeat: no-repeat;

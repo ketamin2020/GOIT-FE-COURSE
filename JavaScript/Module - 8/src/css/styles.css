@@ -125,8 +125,8 @@ body {
   background-color: transparent;
   color: #fff;
   cursor: pointer;
-  transition: background-color 200ms ease-in-out;
   outline: none;
+  transition: background-color 200ms ease-in-out;
   background-image: url("../images/icon-close.svg");
   background-position: center;
   background-size: 60%;

@@ -60,6 +60,7 @@ function pressOnKeyboard(event) {
     removeClassOnClick();
   }
 }
+
 function nextImg() {
   const arrLinks = images.map((image) => image.original);
   const currentImage = arrLinks.findIndex((el) => el === openModalImg.src);
@@ -77,7 +78,6 @@ function prevImg() {
   if (currentImage !== 0) {
     const prevImg = arrLinks[currentImage - 1];
     openModalImg.src = prevImg;
-    console.log(currentImage);
   } else if (currentImage === 0) {
     removeClassOnClick();
   }

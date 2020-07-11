@@ -58,6 +58,8 @@ function pressOnKeyboard(event) {
     prevImg();
   } else if (event.key === "Escape") {
     removeClassOnClick();
+  } else if (event.code === "Space") {
+    setInterval(() => nextImg(), 3000);
   }
 }
 

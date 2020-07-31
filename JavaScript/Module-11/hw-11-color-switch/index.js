@@ -1,4 +1,4 @@
-import { colors } from "/colorsArr.js";
+import { colors } from "./colorsArr.js";
 const startRef = document.querySelector('button[data-action="start"]');
 const stopRef = document.querySelector('button[data-action="stop"]');
 const bodyRef = document.querySelector("body");

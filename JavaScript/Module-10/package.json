@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/luxplanjay/webpack-starter-kit/issues"
   },
-  "homepage": "https://ketamin2020.github.io/GOIT-FE-COURSE/JavaScript/Module10/",
+  "homepage": "https://ketamin2020.github.io/GOIT-FE-COURSE/",
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/plugin-proposal-class-properties": "^7.10.4",

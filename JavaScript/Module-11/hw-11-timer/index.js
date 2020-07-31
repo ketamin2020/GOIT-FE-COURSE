@@ -56,4 +56,4 @@ class CountdownTimer {
   }
 }
 
-CountdownTimer.initTimer("#timer-1", "Jul 31, 2020");
+CountdownTimer.initTimer("#timer-1", "Jul 31, 2021");

@@ -1,0 +1,19 @@
+.online {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: lawngreen;
+  border-radius: 50%;
+  margin: 0 10px;
+  line-height: 50px;
+}
+
+.status {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 10px;
+  line-height: 50px;
+}

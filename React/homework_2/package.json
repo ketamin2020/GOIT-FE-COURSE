@@ -1,5 +1,5 @@
 {
-  "name": "homework_1",
+  "name": "homework_2",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://ketamin2020.github.io/GOIT-FE-COURSE/",
@@ -10,7 +10,8 @@
     "gh-pages": "^3.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "uuid": "^8.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
